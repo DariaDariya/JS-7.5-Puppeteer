@@ -12,7 +12,7 @@ const {
 const {
   clickElement,
   getText,
-  clickOnDay,
+  clickDay,
   clickMovieTime,
   clickSeat,
   checkCodeQR,
@@ -42,7 +42,7 @@ When("user chooses day {string} of the week", async function (string) {
 
 When(
   "user chooses movie {string} and time {string}",
-  async function (movi, time) {
+  async function (movie, time) {
     return await clickMovieTime(this.page, movie, time);
   }
 );
