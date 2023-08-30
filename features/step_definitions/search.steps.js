@@ -37,7 +37,7 @@ Given("user is on start page {string}", async function (string) {
 });
 
 When("user chooses day {string} of the week", async function (string) {
-  return await clickOnDay(this.page, string);
+  return await clickDay(this.page, string);
 });
 
 When(
