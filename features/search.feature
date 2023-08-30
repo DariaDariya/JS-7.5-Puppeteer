@@ -4,7 +4,7 @@ Feature: Booking ticket- Tests
 		Given user is on start page "http://qamid.tmweb.ru/client/index.php"
 		When user chooses day "7" of the week
 		When user chooses movie "2" and time "2"
-		When user chooses seat "8" and "8"
+		When user chooses seat "1" and "1"
 		When user click on button 'Забронировать'
 		When user click on button 'Получить код бронирования'
 		Then user can see QR code
@@ -15,8 +15,8 @@ Feature: Booking ticket- Tests
 		Given user is on start page "http://qamid.tmweb.ru/client/index.php"
 		When user chooses day "7" of the week
 		When user chooses movie "2" and time "2"
-		When user chooses seat "4" and "1"
-		When user chooses seat "3" and "2"
+		When user chooses seat "2" and "9"
+		When user chooses seat "2" and "10"
 		When user click on button 'Забронировать'
 		When user click on button 'Получить код бронирования'
 		Then user can see QR code
@@ -26,9 +26,9 @@ Feature: Booking ticket- Tests
 		Given user is on start page "http://qamid.tmweb.ru/client/index.php"
 		When user chooses day "7" of the week
 		When user chooses movie "2" and time "2"
-		When user chooses seat "5" and "5"
-		When user chooses seat "6" and "2"
-		When user chooses seat "7" and "6"
+		When user chooses seat "11" and "1"
+		When user chooses seat "11" and "2"
+		When user chooses seat "11" and "3"
 		When user click on button 'Забронировать'
 		When user click on button 'Получить код бронирования'
 		Then user can see QR code
